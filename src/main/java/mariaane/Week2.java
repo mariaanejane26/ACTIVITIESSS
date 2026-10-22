@@ -1,12 +1,12 @@
 package mariaane.ganda;
 import java.util.Scanner;
 
-public class Week2 {
+public class WEEK1 {
   public static void main(String[] args) {
     double total;
     Scanner scanner = new Scanner(System.in);
 
-  System.out.printIn("===================================")
+  System.out.println("=====================================");
 
   System.out.print("Enter first number: ");
   System.out.print("ENTER FIRST NUMBER: ");
@@ -20,35 +20,37 @@ public class Week2 {
 
 switch (choice) {
 
-    case 1: // addition works with both positive and negative values
+    case 1 -> {
+        // addition works with both positive and negative values
         total = num1 + num2;
         System.out.print("ADDITION: " + total);
-        break;
+          }
 
-    case 2: // subtraction works with both positive and negative values
+    case 2 -> {
+        // subtraction works with both positive and negative values
         total = num1 - num2;
         System.out.print("SUBTRACTION: " + total);
-        break;
+          }
 
-    case 3: // division follows the correct sign based on the two values
+    case 3 -> {
+        // division follows the correct sign based on the two values
         if (num2 != 0) {
             total = num1 / num2;
             System.out.print("DIVISION: " + total);
         } else {
             System.out.print("CANNOT DIVIDE BY ZERO");
-        }
-        break;
+        } }
 
-    case 4: // multiplication works with both positive and negative values
+    case 4 -> {
+        // multiplication works with both positive and negative values
         total = num1 * num2;
         System.out.print("MULTIPLICATION: " + total);
-        break;
+          }
 
-    default:
-        System.out.print("INVALID INPUT");
+    default -> System.out.print("INVALID INPUT");
 }
 
-  System.out.printIn("===================================")
+    System.out.println("=====================================");
 
     int average = 74, absences = 3;
 
@@ -118,5 +120,3 @@ switch (choice) {
     System.out.println("RESULT 3: " + result_3);// true: the first condition is already true.
    }
 }
-    
-  
