@@ -1,7 +1,7 @@
 package mariaane.ganda;
 import java.util. Scanner;
 
-public class WEEK1 {
+public class Week1 {
   public static void main(String[] args) {
     int age = 19;
     double height = 157.48;
