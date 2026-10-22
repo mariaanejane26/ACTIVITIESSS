@@ -1,22 +1,21 @@
 package mariaane.ganda;
 import java.util. Scanner;
-import java.util.Arrays;
 
-public class Week1 {
+public class WEEK1 {
   public static void main(String[] args) {
     int age = 19;
     double height = 157.48;
     char initial = 'M';
     boolean status = true;
 
-    String name = "Maglalang, Mariaane Jane';
+    String name = "Maglalang, Mariaane Jane";
 
     System.out.println("Your name is: "+ name + " " + initial + "."); 
-    System.our.println("Your age is: "+ age); 
+    System.out.println("Your age is: "+ age); 
     System.out.println("Your height is: "+ height); 
     System.out.println("Is the student enrolled? " + status); 
 
-    System.out.printIn("========================");
+    System.out.println("=====================================");
 
      int quantity = 3;
       double unitPrice = 250.50;
@@ -29,15 +28,15 @@ public class Week1 {
         System.out.println("Unit Price: ₱" + unitPrice);
         System.out.println("Total Cost: ₱" + totalCost);
 
- /*
+        /*
          * totalCost should NOT be declared as an int because
          * unitPrice is a double and the multiplication may
          * produce a decimal value. Using double prevents
          * the decimal portion from being lost.
          */
     
-      System.out.printIn("==============================");
-
+      System.out.println("=====================================");
+        
       Scanner scanner = new Scanner(System.in);
 
       System.out.print("ENTER CENTIMETER VALUE: ");
@@ -60,7 +59,7 @@ public class Week1 {
       System.out.println("THE VALUE " + sampleDoubleVal + " IS CONVERTED TO " + convertedDouble);
       //The .29 value from 97.29 is lost because converting a decimal number into a whole number removes the decimal portion.
 
-      System.out.printIn("==============================");
+      System.out.println("=====================================");
 
         byte number = 127;
         number++;
@@ -72,19 +71,19 @@ public class Week1 {
 
 
        
-        String str1 = new String("Hello");
-        String str2 = new String("Hello");
+        String str1 = "Hello";
+        String str2 = "Hello";
         String str3 = "Hello";
 
         System.out.println("\n=== STRING COMPARISON ===");
 
-        System.out.println("str1 == str2: " + (str1 == str2));
+        System.out.println("str1 == str2: " + (str1.equals(str2)));
         System.out.println("str1.equals(str2): " + str1.equals(str2));
 
-        System.out.println("str1 == str3: " + (str1 == str3));
+        System.out.println("str1 == str3: " + (str1.equals(str3)));
         System.out.println("str1.equals(str3): " + str1.equals(str3));
 
-        System.out.println("str2 == str3: " + (str2 == str3));
+        System.out.println("str2 == str3: " + (str2.equals(str3)));
         System.out.println("str2.equals(str3): " + str2.equals(str3));
 
         /*
@@ -116,12 +115,12 @@ public class Week1 {
         System.out.println("array2[0]: " + array2[0]);
 
         /*
-         * array1 and array2 refer to the same array object.
-         * Therefore, changing the array through array2 is also
-         * visible through array1.
-         */
-    }
+        * array1 and array2 refer to the same array object.
+        * Therefore, changing the array through array2 is also
+        * visible through array1.
+        */
+  }
+
 }
-
-
   
+}
